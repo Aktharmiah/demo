@@ -29,7 +29,7 @@ jobs:
       run: docker build . -f build.dockerfile -t aktharmiah/spring-demo-payroll:latest
       
     - name : Login to docker
-      run: docker login -u $(DOCKERHUB_USERNAME) -p $(DOCKERHUB_PASSWORD)
-      
+      run: docker login -u ${{secrets.DOCKERHUB_USERNAME}} -p ${{secrets.DOCKERHUB_PASSWORD}}
+
     - name : Push newly created image to Docker hub
       run: docker push aktharmiah/spring-demo-payroll:latest
