@@ -58,7 +58,7 @@ public class GreetingController {
 
 		}catch(Exception e){
 
-			model.addAttribute("name", "Unknown user");	
+			model.addAttribute("name", "Unknown user ::" + e.getMessage());	
 		}
 			
 		
