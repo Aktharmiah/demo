@@ -2,10 +2,6 @@ package payroll;
 
 import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.*;
 
-import java.util.Collection;
-
-import javax.xml.bind.PrintConversionEvent;
-
 import org.springframework.hateoas.EntityModel;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;

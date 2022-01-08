@@ -33,7 +33,7 @@ public class User {
     public @Transient User getForId(int id) throws RestClientException{
 
         // String url  =   String.format("http://payroll.tevva/employees/%d", id);
-        String url  =   String.format("payroll2/employees/%d", id);
+        String url  =   String.format("http://payroll2/employees/%d", id);
 
         User user   =   restTemplate.getForObject(url, this.getClass());
         return user;
